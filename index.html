@@ -1,19 +1,27 @@
 <!doctype html>
+<<<<<<< HEAD
 <html lang="en">
+=======
+<html lang="it">
+>>>>>>> bffaac5 (Initial commit)
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Loris Di Cairano</title>
+<<<<<<< HEAD
 
   <!-- Font (pulito, leggibile) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+=======
+>>>>>>> bffaac5 (Initial commit)
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+<<<<<<< HEAD
   <header class="site-header">
     <div class="container header-grid">
       <div class="identity">
@@ -100,10 +108,82 @@
       <span>© <span id="y"></span> Loris Di Cairano</span>
       <span class="dot">•</span>
       <a href="https://ldicairano.github.io/website/">ldicairano.github.io/website</a>
+=======
+  <!-- Top bar -->
+  <header class="topbar">
+    <button class="iconbtn" id="menuBtn" aria-label="Apri menu">☰</button>
+    <div class="brand">
+      <div class="brand-title">Loris Di Cairano</div>
+      <div class="brand-sub">Personal website</div>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <nav class="nav">
+      <a class="navlink active" href="index.html">Home</a>
+      <a class="navlink" href="research/">Research</a>
+      <a class="navlink" href="scientific-divulgation/">Scientific divulgation</a>
+      <a class="navlink" href="software/">Software</a>
+      <a class="navlink" href="contact/">Contact</a>
+      <a class="navlink ext" href="https://github.com/ldicairano" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </nav>
+  </aside>
+
+  <!-- Overlay (solo mobile) -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Main -->
+  <main class="main">
+    <section class="page">
+      <h1>Welcome</h1>
+      <p class="lead">
+        I work on finite-temperature phase transitions at finite size, microcanonical geometry,
+        and HPC simulation frameworks for strongly-correlated systems.
+      </p>
+
+      <div class="grid">
+        <a class="card" href="research/">
+          <h2>Research</h2>
+          <p>Projects, notes, and technical material.</p>
+        </a>
+
+        <a class="card" href="scientific-divulgation/">
+          <h2>Scientific divulgation</h2>
+          <p>Essays and opinions on scientific research.</p>
+        </a>
+
+        <a class="card" href="software/">
+          <h2>Software</h2>
+          <p>Codes, tools, and reproducible workflows.</p>
+        </a>
+      </div>
+
+      <div class="note">
+        Tip: aggiungi pagine creando cartelle con <code>index.html</code> dentro (es. <code>research/</code>).
+      </div>
+    </section>
+
+    <footer class="footer">
+      © <span id="y"></span> Loris Di Cairano
+>>>>>>> bffaac5 (Initial commit)
     </footer>
   </main>
 
   <script>
+<<<<<<< HEAD
+=======
+    const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("overlay");
+    const btn = document.getElementById("menuBtn");
+
+    function openMenu() { sidebar.classList.add("open"); overlay.classList.add("show"); }
+    function closeMenu(){ sidebar.classList.remove("open"); overlay.classList.remove("show"); }
+
+    btn.addEventListener("click", () => sidebar.classList.contains("open") ? closeMenu() : openMenu());
+    overlay.addEventListener("click", closeMenu);
+
+>>>>>>> bffaac5 (Initial commit)
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
 </body>
