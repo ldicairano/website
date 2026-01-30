@@ -1,12 +1,49 @@
 <!DOCTYPE html>
-<html lang="com">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Welcome</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loris Di Cairano</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Workin in progress</h1>
-  <p>...</p>
-  <a href="articolo1.html"> Takes time</a>
+  <header class="hero">
+    <h1>Loris Di Cairano</h1>
+    <p>Research — Statistical Mechanics & Quantum Many-Body</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="articolo1.html">Research</a>
+    <a href="https://github.com/ldicairano">GitHub</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>About</h2>
+      <p>
+        Work in progress. Here I will add publications, software, and projects.
+      </p>
+    </section>
+
+    <section>
+      <h2>Highlights</h2>
+      <ul>
+        <li>MicroGIFT — finite-temperature phase transitions at finite size</li>
+        <li>Geometric microcanonical entropy from Hamiltonian level sets</li>
+        <li>HPC simulations and open-source tools</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="y"></span> Loris Di Cairano
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
