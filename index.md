@@ -6,10 +6,10 @@ title: Home
 <div class="hero">
   <img src="{{ '/assets/img/profile.png' | relative_url }}" alt="Profile photo">
   <div>
-    <h1>Il Tuo Nome, Ph.D.</h1>
+    <h1>Loris Di Cairano, Ph.D.</h1>
     <div class="sub">
-      Ruolo (es. Postdoctoral Researcher in …)<br/>
-      Dipartimento – Università / Ente
+      Postdoctoral Researcher<br/>
+      FTMS – University of Luxembourg
     </div>
   </div>
 </div>
@@ -27,9 +27,11 @@ title: Home
   <h2>Appointments</h2>
   <div class="card">
     <ul class="list">
-      <li><b>[2025–present]</b> – Postdoc, Università X</li>
-      <li><b>[2022–2025]</b> – Postdoc, Università Y</li>
-      <li><b>[2018–2021]</b> – PhD, Università Z</li>
+      <li><b>[2022–present]</b> – Postdoc, Università X</li>
+      <li><b>[2018–2021]</b> – PhD student, RWTH University and Forschungszentrum Jülich</li>
+      <li><b>[2015–2018]</b> – Master in Physics, University of Tor Vergata, Rome, Italy</li>
+      <li><b>[Sep.-Dec. 2017]</b> – Erasmus, Aix-Marseille University, Marseille, France</li>
+      <li><b>[2011–2015]</b> – Bachelor in Physics, University of Tor Vergata, Rome, Italy</li>
     </ul>
   </div>
 </div>
