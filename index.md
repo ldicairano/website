@@ -17,7 +17,7 @@ title: Home
 <div class="section">
   <h2>About</h2>
   <div class="card">
-    Ciao! Qui metti 6–10 righe come nel sito di William: chi sei, cosa fai, dove lavori,
+    Ciao! Qui metti 6–10 righe: chi sei, cosa fai, dove lavori,
     e un paio di frasi su interessi/metodi.  
     <span class="small">Chiudi con una frase del tipo: “Per domande, contattami”.</span>
   </div>
