@@ -4,7 +4,7 @@ title: Home
 ---
 
 <div class="hero">
-  <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Profile photo">
+  <img src="{{ '/assets/img/profile.png' | relative_url }}" alt="Profile photo">
   <div>
     <h1>Il Tuo Nome, Ph.D.</h1>
     <div class="sub">
