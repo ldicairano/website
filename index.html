@@ -43,9 +43,25 @@ title: Home
     Stanza / edificio<br/>
     Indirizzo<br/><br/>
     <b>Find out more:</b><br/>
-    <a href="mailto:tuamail@domain.com">Email</a> ·
+    <a href="mailto:l.di.cairano.92@gmail.com">Email</a> ·
     <a href="https://github.com/tuoUser">GitHub</a> ·
     <a href="https://scholar.google.com/">Google Scholar</a> ·
     <a href="https://www.linkedin.com/">LinkedIn</a>
   </div>
 </div>
+
+<script>
+  console.log("menu script loaded");
+
+  const sidebar = document.getElementById("sidebar");
+  const overlay = document.getElementById("overlay");
+  const btn = document.getElementById("menuBtn");
+
+  btn.addEventListener("click", () => {
+    sidebar.classList.toggle("open");
+  });
+
+  overlay?.addEventListener("click", () => {
+    sidebar.classList.remove("open");
+  });
+</script>

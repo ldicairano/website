@@ -1,0 +1,10 @@
+website/
+├── index.html        ✅ QUESTO È OBBLIGATORIO
+├── css/
+├── research/
+│   └── index.html
+├── scientific-divulgation/
+│   └── index.html
+└── software/
+    └── index.html
+
