@@ -1,0 +1,16 @@
+research/
+  index.html
+  numerical-phase-transition.html
+  theoretical-phase-transition.html
+  microcanonical-ensemble.html
+  renormalization-group.html
+  topics/
+    mirage.html
+    microgift.html
+    entropy-geometry.html
+  assets/
+    research.css
+    img/
+      venn.png
+      topic1.png
+

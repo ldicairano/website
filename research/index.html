@@ -1,18 +1,88 @@
 <!doctype html>
-<html lang="it">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Research</title>
-  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/style.css">   <!-- il tuo CSS globale -->
+  <link rel="stylesheet" href="assets/research.css">       <!-- CSS solo research -->
 </head>
+
 <body>
-  <main class="main">
-    <section class="page">
-      <h1>Research</h1>
-      <p class="lead">Work in progress.</p>
-      <p><a class="navlink" href="../">← Home</a></p>
+
+  <!-- se hai già un header globale, incollalo qui -->
+  <main class="wrap">
+
+    <div class="sep"></div>
+    <h1 class="page-title">Scientific Interests</h1>
+    <div class="sep"></div>
+
+    <section class="tri">
+      <details class="drop" open>
+        <summary class="drop__sum">
+          <span>Numerical Phase Transitions</span>
+          <span class="chev">⌄</span>
+        </summary>
+        <div class="drop__content">
+          <ul class="linklist">
+            <li><a href="numerical-phase-transition.html">Overview</a></li>
+            <li><a href="topics/mirage.html">MIRAGE sampling</a></li>
+            <li><a href="topics/microgift.html">MicroGIFT framework</a></li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="drop">
+        <summary class="drop__sum">
+          <span>Theoretical Phase Transitions</span>
+          <span class="chev">⌄</span>
+        </summary>
+        <div class="drop__content">
+          <ul class="linklist">
+            <li><a href="theoretical-phase-transition.html">Overview</a></li>
+            <li><a href="topics/entropy-geometry.html">Geometric entropy</a></li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="drop">
+        <summary class="drop__sum">
+          <span>Microcanonical Esemble</span>
+          <span class="chev">⌄</span>
+        </summary>
+        <div class="drop__content">
+          <ul class="linklist">
+            <li><a href="microcanonical-ensemble.html">Overview</a></li>
+          </ul>
+        </div>
+      </details>
     </section>
+
+    <div class="sep"></div>
+
+    <section class="two">
+      <figure class="figure">
+        <img src="assets/img/venn.png" alt="Venn diagram">
+        <figcaption>Where my work sits (example figure).</figcaption>
+      </figure>
+
+      <div>
+        <h2 class="h2">The Aim of My Work</h2>
+        <p>
+          Scrivi qui come nella seconda immagine: obiettivo generale, contesto, focus.
+        </p>
+        <p>
+          Secondo paragrafo…
+        </p>
+
+        <h2 class="h2" style="margin-top:26px;">My Research Topics</h2>
+        <p>
+          Introduzione generale e poi elenco, con link alle pagine.
+        </p>
+      </div>
+    </section>
+
   </main>
 </body>
 </html>
+
