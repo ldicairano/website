@@ -36,14 +36,14 @@ a:hover{ text-decoration: underline; }
 
 /* HERO (foto a sinistra, testo a destra) */
 .hero{
-  grid-template-columns: 80px 1fr;  /* prima 160px */
-  gap: 8px;                          /* prima 28px */
+  grid-template-columns: 1px 1fr;  /* prima 160px */
+  gap: 28px;                          /* prima 28px */
 }
 
 .hero__img{
-  width: 80px;       /* prima 160px */
-  height: 80px;      /* prima 160px */
-  border-radius: 12px;
+  width: 1px;       /* prima 160px */
+  height: 1px;      /* prima 160px */
+  border-radius: 1px;
   object-fit: cover;
 }
 
