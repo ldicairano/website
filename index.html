@@ -49,19 +49,3 @@ title: Home
     <a href="https://www.linkedin.com/">LinkedIn</a>
   </div>
 </div>
-
-<script>
-  console.log("menu script loaded");
-
-  const sidebar = document.getElementById("sidebar");
-  const overlay = document.getElementById("overlay");
-  const btn = document.getElementById("menuBtn");
-
-  btn.addEventListener("click", () => {
-    sidebar.classList.toggle("open");
-  });
-
-  overlay?.addEventListener("click", () => {
-    sidebar.classList.remove("open");
-  });
-</script>
