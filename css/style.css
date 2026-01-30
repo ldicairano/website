@@ -25,7 +25,6 @@
 
 *{ box-sizing:border-box; }
 html,body{ height:100%; }
-
 body{
   margin:0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -38,8 +37,6 @@ body{
 }
 
 a{ color:inherit; text-decoration:none; }
-a:hover{ opacity:0.95; }
-
 code{
   padding: 2px 6px;
   border-radius: 10px;
@@ -48,7 +45,7 @@ code{
   font-size: 0.95em;
 }
 
-/* ================= TOP BAR ================= */
+/* Topbar */
 .topbar{
   position: sticky;
   top: 0;
@@ -76,7 +73,7 @@ code{
 .brand-title{ font-weight: 750; letter-spacing: -0.01em; }
 .brand-sub{ color: var(--muted); font-size: 0.92rem; }
 
-/* ================= SIDEBAR ================= */
+/* Sidebar */
 .sidebar{
   position: fixed;
   top: 0;
@@ -111,7 +108,7 @@ code{
 }
 .navlink.ext{ color: var(--muted); }
 
-/* ================= OVERLAY (mobile) ================= */
+/* Overlay mobile */
 .overlay{
   position: fixed;
   inset: 0;
@@ -126,7 +123,7 @@ code{
   pointer-events: auto;
 }
 
-/* ================= MAIN ================= */
+/* Main */
 .main{
   width: min(var(--max), calc(100% - 32px));
   margin: 22px auto 50px;
@@ -145,14 +142,12 @@ h1{
   font-size: clamp(1.8rem, 3.2vw, 2.4rem);
   letter-spacing: -0.02em;
 }
-
 .lead{
   margin: 0 0 14px;
   color: var(--muted);
   max-width: 75ch;
 }
 
-/* ================= CARDS ================= */
 .grid{
   display:grid;
   grid-template-columns: repeat(3, 1fr);
@@ -193,7 +188,7 @@ h1{
   color: var(--muted);
 }
 
-/* ================= DESKTOP ================= */
+/* Desktop: sidebar always visible + main shifted */
 @media (min-width: 980px){
   .sidebar{ transform: translateX(0); }
   .overlay{ display:none; }
@@ -204,84 +199,7 @@ h1{
   }
 }
 
-/* ================= MOBILE ================= */
+/* Mobile cards */
 @media (max-width: 980px){
   .grid{ grid-template-columns: 1fr; }
 }
-
-/* ================= NEWSPAPER ARTICLE ================= */
-.paper{
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 22px;
-  border-radius: 16px;
-  border: 1px solid var(--border);
-  background: var(--panel);
-  box-shadow: var(--shadow);
-}
-
-.paper-head{
-  padding-bottom: 14px;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 16px;
-}
-
-.kicker{
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  opacity: 0.75;
-  margin: 0 0 10px;
-}
-
-.paper-title{
-  margin: 0 0 8px;
-  font-size: clamp(2.0rem, 3.2vw, 2.6rem);
-  line-height: 1.1;
-}
-
-.paper-subtitle{
-  margin: 0 0 10px;
-  opacity: 0.8;
-}
-
-.paper-meta{
-  margin: 0;
-  font-size: 0.92rem;
-  opacity: 0.7;
-}
-
-.paper-body{
-  column-count: 2;
-  column-gap: 34px;
-  font-size: 1.02rem;
-  line-height: 1.65;
-}
-
-@media (max-width: 900px){
-  .paper-body{ column-count: 1; }
-}
-
-.paper-body > p:first-of-type::first-letter{
-  float: left;
-  font-size: 3.2rem;
-  line-height: 0.9;
-  padding-right: 10px;
-  padding-top: 6px;
-  font-weight: 700;
-}
-
-.paper-body h2{
-  break-inside: avoid;
-  margin-top: 18px;
-  margin-bottom: 8px;
-  font-size: 1.15rem;
-}
-
-.paper-foot{
-  margin-top: 18px;
-  padding-top: 12px;
-  border-top: 1px solid var(--border);
-  opacity: 0.8;
-}
-
