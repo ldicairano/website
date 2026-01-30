@@ -36,8 +36,10 @@ a:hover{ text-decoration: underline; }
 
 /* HERO (foto a sinistra, testo a destra) */
 .hero{
-  grid-template-columns: 1px 1fr;  /* prima 160px */
-  gap: 28px;                          /* prima 28px */
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 18px;
+  align-items: center;
 }
 
 .hero__img{
@@ -45,6 +47,14 @@ a:hover{ text-decoration: underline; }
   height: 1px;      /* prima 160px */
   border-radius: 1px;
   object-fit: cover;
+}
+
+.hero img{
+  width: 110px;
+  height: 110px;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
 }
 
 .hero__name{
@@ -93,6 +103,6 @@ a:hover{ text-decoration: underline; }
 
 @media (max-width: 860px){
   .hero{ grid-template-columns: 90px 1fr; }
-  .hero_img{ width:90px; height:90px; }
+  .hero__img{ width:90px; height:90px; }
 }
 
