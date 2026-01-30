@@ -36,17 +36,14 @@ a:hover{ text-decoration: underline; }
 
 /* HERO (foto a sinistra, testo a destra) */
 .hero{
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 28px;
-  align-items: center;
-  padding: 26px 0;
+  grid-template-columns: 110px 1fr;  /* prima 160px */
+  gap: 18px;                          /* prima 28px */
 }
 
 .hero__img{
-  width: 160px;
-  height: 160px;
-  border-radius: 14px;
+  width: 110px;       /* prima 160px */
+  height: 110px;      /* prima 160px */
+  border-radius: 12px;
   object-fit: cover;
 }
 
@@ -95,15 +92,7 @@ a:hover{ text-decoration: underline; }
 }
 
 @media (max-width: 860px){
-  .hero{
-    grid-template-columns: 120px 1fr;
-  }
-  .hero__img{
-    width:120px; height:120px;
-  }
-  .twocol{
-    grid-template-columns: 1fr;
-    gap: 26px;
-  }
+  .hero{ grid-template-columns: 90px 1fr; }
+  .hero__img{ width:90px; height:90px; }
 }
 
