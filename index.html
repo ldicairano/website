@@ -1,45 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Loris Di Cairano</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Font (pulito, leggibile) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <header class="hero">
-    <h1>Loris Di Cairano</h1>
-    <p>Research — Statistical Mechanics & Quantum Many-Body</p>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="identity">
+        <div class="badge">Research • Statistical Mechanics • Quantum Many-Body</div>
+        <h1>Loris Di Cairano</h1>
+        <p class="lead">
+          I work on finite-temperature phase transitions at finite size, microcanonical geometry, and HPC simulations.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="articolo1.html">Research</a>
+          <a class="btn" href="https://github.com/ldicairano" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+
+        <div class="meta">
+          <span>University of Luxembourg</span>
+          <span class="dot">•</span>
+          <a href="mailto:loris.dicairano@uni.lu">loris.dicairano@uni.lu</a>
+        </div>
+      </div>
+
+      <div class="portrait-card">
+        <!-- Metti un file immagine: assets/profile.jpg -->
+        <img class="portrait" src="assets/profile.jpg" alt="Portrait">
+        <div class="portrait-footer">
+          <span class="pill">CV</span>
+          <span class="pill">Publications</span>
+          <span class="pill">Software</span>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="articolo1.html">Research</a>
-    <a href="https://github.com/ldicairano">GitHub</a>
-  </nav>
+  <main class="container">
+    <section class="grid two">
+      <article class="card">
+        <h2>Now</h2>
+        <p>
+          Building geometric microcanonical tools to extract thermodynamics from level-set geometry and applying them
+          to finite-size quantum platforms.
+        </p>
+        <ul class="bullets">
+          <li>MicroGIFT: finite-T phase transitions in finite systems</li>
+          <li>MIRAGE sampling algorithm</li>
+          <li>Open-source simulation framework</li>
+        </ul>
+      </article>
 
-  <main>
-    <section>
-      <h2>About</h2>
-      <p>
-        Work in progress. Here I will add publications, software, and projects.
-      </p>
+      <article class="card">
+        <h2>Highlights</h2>
+        <div class="chips">
+          <span class="chip">Finite-T PTs (finite size)</span>
+          <span class="chip">Microcanonical entropy</span>
+          <span class="chip">Hamiltonian geometry</span>
+          <span class="chip">HPC / Fortran</span>
+          <span class="chip">Quantum simulators</span>
+        </div>
+        <p class="muted">
+          This website is intentionally minimal: fast, readable, and easy to maintain.
+        </p>
+      </article>
     </section>
 
-    <section>
-      <h2>Highlights</h2>
-      <ul>
-        <li>MicroGIFT — finite-temperature phase transitions at finite size</li>
-        <li>Geometric microcanonical entropy from Hamiltonian level sets</li>
-        <li>HPC simulations and open-source tools</li>
-      </ul>
+    <section class="card">
+      <div class="section-head">
+        <h2>Selected links</h2>
+        <p class="muted">Quick access to the things people actually look for.</p>
+      </div>
+
+      <div class="grid three">
+        <a class="linkcard" href="https://github.com/ldicairano" target="_blank" rel="noreferrer">
+          <h3>GitHub</h3><p class="muted">Code, tools, reproducible workflows.</p>
+        </a>
+        <a class="linkcard" href="#" target="_blank" rel="noreferrer">
+          <h3>Google Scholar</h3><p class="muted">Papers & citations.</p>
+        </a>
+        <a class="linkcard" href="#" target="_blank" rel="noreferrer">
+          <h3>arXiv</h3><p class="muted">Preprints & drafts.</p>
+        </a>
+      </div>
     </section>
+
+    <footer class="site-footer">
+      <span>© <span id="y"></span> Loris Di Cairano</span>
+      <span class="dot">•</span>
+      <a href="https://ldicairano.github.io/website/">ldicairano.github.io/website</a>
+    </footer>
   </main>
-
-  <footer>
-    © <span id="y"></span> Loris Di Cairano
-  </footer>
 
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
