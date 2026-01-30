@@ -1,0 +1,13 @@
+title: "Il Tuo Nome"
+description: "Ricercatore / Postdoc / ecc."
+url: "https://ldicairano.github.io"
+baseurl: "/website"
+markdown: kramdown
+
+# Mostra sempre queste pagine nel menu
+header_pages:
+  - index.md
+  - cv.md
+  - publications.md
+  - research.md
+  - resources.md

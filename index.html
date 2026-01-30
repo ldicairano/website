@@ -89,18 +89,28 @@
     </footer>
   </main>
 
-  <script>
-    const sidebar = document.getElementById("sidebar");
-    const overlay = document.getElementById("overlay");
-    const btn = document.getElementById("menuBtn");
+<script>
+  const sidebar = document.getElementById("sidebar");
+  const overlay = document.getElementById("overlay");
+  const btn = document.getElementById("menuBtn");
 
-    function openMenu() { sidebar.classList.add("open"); overlay.classList.add("show"); }
-    function closeMenu(){ sidebar.classList.remove("open"); overlay.classList.remove("show"); }
+  function openMenu(){
+    sidebar.classList.add("open");
+    overlay.classList.add("show");
+    document.body.classList.add("menu-open");
+  }
+  function closeMenu(){
+    sidebar.classList.remove("open");
+    overlay.classList.remove("show");
+    document.body.classList.remove("menu-open");
+  }
 
-    btn.addEventListener("click", () => sidebar.classList.contains("open") ? closeMenu() : openMenu());
-    overlay.addEventListener("click", closeMenu);
+  btn.addEventListener("click", () => {
+    if (sidebar.classList.contains("open")) closeMenu();
+    else openMenu();
+  });
 
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  overlay.addEventListener("click", closeMenu);
+</script>
 </body>
 </html>

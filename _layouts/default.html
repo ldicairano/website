@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title }} · {{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+
+      <nav class="nav">
+        {% for p in site.header_pages %}
+          {% assign doc = site.pages | where: "path", p | first %}
+          <a class="nav__link {% if page.url == doc.url %}is-active{% endif %}"
+             href="{{ doc.url | relative_url }}">
+             {{ doc.title }}
+          </a>
+        {% endfor %}
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    {{ content }}
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>© {{ "now" | date: "%Y" }} {{ site.title }}</div>
+      <div class="footer__right">
+        <a href="mailto:tuamail@domain.com">Email</a>
+        <a href="https://github.com/tuoUser">GitHub</a>
+        <a href="https://scholar.google.com/">Google Scholar</a>
+        <a href="https://www.linkedin.com/">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
