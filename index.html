@@ -17,6 +17,32 @@
     </div>
   </header>
 
+  <script>
+    const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("overlay");
+    const btn = document.getElementById("menuBtn");
+
+    function openMenu() {
+      sidebar.classList.add("open");
+      overlay.classList.add("show");
+      document.body.classList.add("menu-open");
+    }
+    function closeMenu() {
+      sidebar.classList.remove("open");
+      overlay.classList.remove("show");
+      document.body.classList.remove("menu-open");
+    }
+
+    btn.addEventListener("click", () =>
+      sidebar.classList.contains("open") ? closeMenu() : openMenu()
+    );
+    overlay.addEventListener("click", closeMenu);
+
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
   <!-- Sidebar -->
   <aside class="sidebar" id="sidebar">
     <nav class="nav">
