@@ -1,26 +1,23 @@
 :root{
-  --bg: #0b1220;
-  --panel: rgba(255,255,255,0.06);
-  --panel2: rgba(255,255,255,0.10);
-  --text: rgba(255,255,255,0.92);
-  --muted: rgba(255,255,255,0.68);
-  --border: rgba(255,255,255,0.14);
-  --shadow: 0 10px 28px rgba(0,0,0,0.35);
+  /* warm academic palette */
+  --bg: #fbfaf7;                 /* warm off-white */
+  --panel: rgba(255,255,255,0.92);
+  --panel2: rgba(17,24,39,0.04); /* soft ink tint */
+  --text: rgba(17,24,39,0.92);   /* “ink” */
+  --muted: rgba(17,24,39,0.62);
+  --border: rgba(17,24,39,0.10);
+  --shadow: 0 18px 44px rgba(17,24,39,0.12);
   --radius: 16px;
   --sidebar: 280px;
   --max: 1040px;
+
+  --accent: #0f766e;   /* deep teal */
+  --accent2:#b45309;   /* warm amber */
 }
 
+
 @media (prefers-color-scheme: light){
-  :root{
-    --bg:#f7f7fb;
-    --panel:#ffffff;
-    --panel2:#f1f2f7;
-    --text: rgba(10,10,20,0.92);
-    --muted: rgba(10,10,20,0.62);
-    --border: rgba(10,10,20,0.10);
-    --shadow: 0 10px 28px rgba(10,10,20,0.12);
-  }
+  :root{}
 }
 
 *{ box-sizing:border-box; }
@@ -30,9 +27,9 @@ body{
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--text);
   background:
-    radial-gradient(900px 520px at 20% 10%, rgba(125,211,252,0.18), transparent 60%),
-    radial-gradient(800px 480px at 90% 20%, rgba(167,139,250,0.16), transparent 55%),
-    var(--bg);
+  radial-gradient(900px 520px at 18% 8%, rgba(15,118,110,0.10), transparent 60%),
+  radial-gradient(800px 480px at 90% 18%, rgba(180,83,9,0.10), transparent 55%),
+  var(--bg);
   line-height: 1.55;
 }
 
@@ -82,7 +79,7 @@ code{
   width: var(--sidebar);
   padding: 64px 14px 14px;
   border-right: 1px solid var(--border);
-  background: var(--panel);
+  background: rgba(255,255,255,0.96);
   backdrop-filter: blur(10px);
   transform: translateX(-100%);
   transition: transform .16s ease;
@@ -102,9 +99,10 @@ code{
   opacity: 0.92;
   font-size: 1rem;
 }
-.navlink:hover{ background: var(--panel2); }
+.navlink:hover{ background: rgba(17,24,39,0.05); }
 .navlink.active{
-  background: var(--panel2);
+  background: rgba(15,118,110,0.10);
+  color: rgba(17,24,39,0.92);
   font-weight: 700;
 }
 .navlink.ext{ color: var(--muted); }
