@@ -1,17 +1,27 @@
 <!doctype html>
-<html lang="it">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ page.title }} · {{ site.title }}</title>
+<html lang="en">
+<header class="topbar">
+  <div class="wrap topbar__inner">
 
-  <!-- Fonts (titoli serif + testo pulito) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Lora:wght@500;600&display=swap" rel="stylesheet">
+    <a class="brandblock" href="{{ '/' | relative_url }}">
+      <img class="brandphoto" src="{{ '/assets/img/profile.png' | relative_url }}" alt="Profile">
+      <div class="brandtext">
+        <div class="brandname">Loris Di Cairano, Ph.D.</div>
+        <div class="brandrole">Postdoctoral Researcher</div>
+        <div class="brandaffil">FTMS – University of Luxembourg</div>
+      </div>
+    </a>
 
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-</head>
+    <nav class="nav">
+      <a class="nav__link {% if page.url == '/' %}is-active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
+      <a class="nav__link" href="{{ '/cv/' | relative_url }}">Curriculum Vitae</a>
+      <a class="nav__link" href="{{ '/publications/' | relative_url }}">Publications</a>
+      <a class="nav__link" href="{{ '/research/' | relative_url }}">Research</a>
+      <a class="nav__link" href="{{ '/resources/' | relative_url }}">Resources</a>
+    </nav>
+
+  </div>
+</header>
 
 <body>
   <header class="topbar">
