@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 
+<script src="{{ '/assets/js/lang-toggle.js' | relative_url }}"></script>
+
 <body>
   <header class="topbar">
     <div class="wrap topbar__inner">
@@ -22,6 +24,11 @@
         <a class="nav__link" href="{{ '/research/' | relative_url }}">Research</a>    ·
         <a class="nav__link" href="{{ '/essays-on-science/' | relative_url }}">Essays on Science</a>   |
       </nav>
+
+      <button class="lang-toggle" id="langToggle" type="button" hidden aria-label="Toggle language">
+  EN
+      </button>
+
 
     </div>
   </header>

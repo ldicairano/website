@@ -99,3 +99,21 @@ a:hover{ text-decoration: underline; }
   .hero__img{ width:90px; height:90px; }
 }
 
+/* Bottone lingua (globale) */
+.lang-toggle{
+  margin-left: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 999px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.lang-toggle:hover{ border-color: #cfcfcf; }
+.lang-toggle:active{ transform: translateY(1px); }
+
