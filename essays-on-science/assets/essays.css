@@ -162,3 +162,40 @@ blockquote p{
   transform: translateY(1px);
 }
 
+/* Quote a destra del testo (desktop), sotto (mobile) */
+.sidequote{
+  float: right;
+  width: min(360px, 42%);
+  margin: 6px 0 14px 22px;
+  padding: 12px 14px;
+  border-left: 4px solid #2a2a2a;
+  background: #fafafa;
+}
+
+.sidequote img{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+  border: 1px solid #e6e6e6;
+}
+
+.sidequote p{
+  margin: 0 0 10px;
+}
+
+.sidequote__author{
+  margin: 0;
+  opacity: .8;
+  font-size: .95rem;
+}
+
+/* Su schermi piccoli: niente float, diventa un blocco normale */
+@media (max-width: 980px){
+  .sidequote{
+    float: none;
+    width: auto;
+    margin: 14px 0;
+  }
+}
+
