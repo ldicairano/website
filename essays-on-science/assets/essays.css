@@ -237,3 +237,11 @@ blockquote p{
   }
 }
 
+
+/* =========================================================
+   Force Times New Roman everywhere inside reflections topics
+   ========================================================= */
+article[data-lang],
+article[data-lang] *{
+  font-family: "Times New Roman", Times, serif !important;
+}
