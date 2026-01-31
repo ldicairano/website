@@ -3,50 +3,209 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Overview</title>
+  <title>Finite-Size Phase Transitions</title>
+
   <link rel="stylesheet" href="../../assets/css/style.css">
-  <link rel="stylesheet" href="../assets/research.css">
+  <link rel="stylesheet" href="../assets/reflections.css">
 </head>
+
 <body>
-
   <main class="wrap">
+    <div class="sep"></div>
+
+    <header style="display:flex; align-items:flex-end; justify-content:space-between; gap:16px;">
+      <div>
+        <h1 class="page-title" style="margin:0;">Finite-Size Phase Transitions</h1>
+        <p style="margin:6px 0 0; opacity:.75;">Essays on Science — bilingual (EN/IT) - Reading time: 10 minutes</p>
+      </div>
+
+      <button class="lang-toggle" id="langToggle" type="button" hidden aria-label="Toggle language">EN</button>
+    </header>
 
     <div class="sep"></div>
-    <h1 class="page-title">Overview</h1>
+
+    <!-- ENGLISH -->
+    <article data-lang="en" lang="en">
+  <h2 class="h2">Finite-Size Phase Transitions: On the Geometric Foundation of Thermodynamics</h2>
+
+  <h3 class="h3">Introduction</h3>
+
+  <p>
+    The heart of the problem is simple to state but deeply destabilizing: modern theories of phase transitions (PT), formally grounded in statistical mechanics and the thermodynamic limit (TD), are not compatible with the existence of transitions in real systems, which are finite. This paradox was formulated by Craig Callender as a logically incompatible tetrad:
+  </p>
+
+  <ol class="linklist">
+    <li>Phase transitions are described by statistical mechanics.</li>
+    <li>Physical systems have a finite number of degrees of freedom.</li>
+    <li>Phase transitions occur only when the partition function is non-analytic.</li>
+    <li>Real systems exhibit phase transitions.</li>
+  </ol>
+
+  <p><strong>Actual paradox:</strong> empirical observation (4) clashes with theoretical definition (3), and the theory (1) cannot explain observation (4) if (2) is true.</p>
+
+  <p>
+    This is not a marginal anomaly: it is a structural crisis. The theory denies what the experiment observes.
+  </p>
+
+  <h3 class="h3">The Nature of the Deadlock</h3>
+
+  <p>
+    The problem lies in the nature of the thermodynamic limit: it is necessary to obtain non-analyticities, yet it is ontologically inapplicable to concrete systems. Nevertheless, predictions derived in the TD limit work surprisingly well even for systems with N∼10². This apparent effectiveness conceals a deeper anomaly: we are modeling finite systems using tools (non-analyticities, degeneracies, transitions) that, by definition, should not apply.
+  </p>
+
+  <p>
+    Lee-Yang theory makes this conflict explicit: in finite systems, the zeros of the partition function never touch the real axis of the complex plane, and thus no discontinuities occur. Yet in laboratories, we observe hysteresis, scaling, and spontaneous symmetry breaking—even in isolated, controlled systems with just a few dozen qubits. The common argument — that "the behavior is as if it were a transition" — is epistemologically insufficient: we need a theory that tells us when a transition occurs, not merely how closely a phenomenon resembles one.
+  </p>
+
+  <p>
+    To escape this deadlock, Paul Mainwood has proposed an alternative definition: a phase transition in a finite system occurs if and only if its thermodynamic limit exhibits a singularity. This helps recover a connection between models and observation, but at a high cost: physical reality is made to depend on mathematical properties of non-existent, idealized objects.
+  </p>
+
+  <p>
+    In the quantum regime, the situation is even more severe: all representations of an algebra of observables are unitarily equivalent in finite systems, making it formally impossible to distinguish phases. And yet, phases manifest: in small-spin systems we observe symmetry breaking, critical behavior, and long-range correlations.
+  </p>
+
+  <p>
+    Even the renormalization group (RG), despite its explanatory power in the infinite limit, is based on concepts — fixed points, diverging correlation lengths, flows in parameter space — that are not rigorously defined in finite systems. And yet, in very small systems, we already observe critical exponents that match those of the infinite limit. According to theory, universality emerges from the limit; according to experiment, it is already present.
+  </p>
+
+  <h3 class="h3">An Operational Crisis</h3>
+
+  <p>
+    This crisis is not only conceptual. It is operational.
+  </p>
+
+  <p>
+    In the context of quantum technologies — Rydberg arrays, trapped-ion chains, superconducting qubit networks — these phenomena are not theoretical curiosities: they define the operational regimes of devices. The emergence of order, coherence, and collective behavior in finite, closed, noisy systems is now the functional core of quantum control.
+  </p>
+
+  <p>
+    And yet, we lack a theory that can define transitions in these systems. The current formalism labels these phenomena as crossovers, but that merely means we don't know how to classify them. Without a structural theory, we cannot even say when a system passes from one phase to another. We cannot design technologies if we do not know when a behavior emerges or vanishes.
+  </p>
+
+  <h3 class="h3">A Structural Proposal: Entropy as a Geometric Object</h3>
+
+  <p>
+    Recent proposals have attempted to break this impasse. Bachmann has shown that it is possible to classify transitions even in finite systems by analyzing derivatives of the microcanonical entropy. Di Cairano et al. have shown that transitions can be interpreted as geometric reorganizations in state space. However, these tools remain confined to the classical domain: there exists no operational definition of microcanonical entropy for finite quantum systems.
+  </p>
+
+  <p>
+    In this work, we address that gap. We construct a functional definition of microcanonical entropy for finite quantum systems, based on a path-integral formalism in terms of SU(2) coherent states. Unlike the traditional approach that treats entropy as a count of microstates, here entropy emerges as a geometric structure on the space of coherent trajectories, with well-defined action and curvature.
+  </p>
+
+  <p>
+    This formulation enables us to:
+  </p>
+
+  <ul class="linklist">
+    <li>Compute entropy and thermodynamic observables in finite quantum systems without invoking the thermodynamic limit;</li>
+    <li>Apply Bachmann's classification to fully quantum pure-state models (e.g., spin systems, Tavis–Cummings Hamiltonian);</li>
+    <li>Recast phase transitions not as analytical singularities, but as geometric transformations in the structure of the action over configuration space.</li>
+  </ul>
+
+  <h3 class="h3">Not a Refinement: A Re-foundation</h3>
+
+  <p>
+    This is not a refinement of crossover analysis. It is a proposal to redefine thermodynamic concepts in the only regime where quantum physics is actually operational. The goal is not to replace classical formalism, but to complement it with a new structure — coherent, geometric, finite-compatible — capable of explaining what we already see in our laboratories.
+  </p>
+
+    </article>
+
+    <!-- ITALIAN -->
+    <article data-lang="it" lang="it" hidden>
+  <h2 class="h2">Transizioni di Fase in Sistemi Finiti: Sui Fondamenti Geometrici della Termodinamica</h2>
+
+  <h3 class="h3">Introduzione</h3>
+
+  <p>
+    Il cuore del problema è semplice da enunciare ma profondamente destabilizzante: le teorie moderne delle transizioni di fase (PT), formalmente fondate nella meccanica statistica e nel limite termodinamico (LD), sono incompatibili con l'esistenza di transizioni in sistemi reali, che sono finiti. Questo paradosso è stato formulato da Craig Callender come una tetrade logicamente incompatibile:
+  </p>
+
+  <ol class="linklist">
+    <li>Le transizioni di fase sono descritte dalla meccanica statistica.</li>
+    <li>I sistemi fisici hanno un numero finito di gradi di libertà.</li>
+    <li>Le transizioni di fase si verificano solo quando la funzione di partizione è non-analitica.</li>
+    <li>I sistemi reali presentano transizioni di fase.</li>
+  </ol>
+
+  <p><strong>Il paradosso effettivo:</strong> l'osservazione empirica (4) si scontra con la definizione teorica (3), e la teoria (1) non può spiegare l'osservazione (4) se (2) è vera.</p>
+
+  <p>
+    Non è un'anomalia marginale: è una crisi strutturale. La teoria nega quello che l'esperimento osserva.
+  </p>
+
+  <h3 class="h3">La Natura dell'Impasse</h3>
+
+  <p>
+    Il problema risiede nella natura del limite termodinamico: è necessario per ottenere non-analitiche, eppure è ontologicamente inapplicabile ai sistemi concreti. Tuttavia, le predizioni derivate nel limite LD funzionano sorprendentemente bene anche per sistemi con N∼10². Questa apparente efficacia nasconde un'anomalia più profonda: stiamo modellando sistemi finiti usando strumenti (non-analitiche, degenerazioni, transizioni) che, per definizione, non dovrebbero applicarsi.
+  </p>
+
+  <p>
+    La teoria di Lee-Yang rende esplicito questo conflitto: in sistemi finiti, gli zeri della funzione di partizione non toccano mai l'asse reale del piano complesso, e quindi non si verificano discontinuità. Eppure nei laboratori osserviamo isteresi, scaling e rottura spontanea di simmetria — persino in sistemi isolati, controllati, con solo poche decine di qubit. L'argomento comune — che "il comportamento è come se fosse una transizione" — è epistemologicamente insufficiente: abbiamo bisogno di una teoria che ci dica quando una transizione si verifica, non solo quanto bene un fenomeno la assomiglia.
+  </p>
+
+  <p>
+    Per sfuggire a questo impasse, Paul Mainwood ha proposto una definizione alternativa: una transizione di fase in un sistema finito si verifica se e solo se il suo limite termodinamico presenta una singolarità. Questo aiuta a recuperare una connessione tra modelli e osservazione, ma al prezzo di un'alta cost: la realtà fisica viene fatta dipendere da proprietà matematiche di oggetti idealizzati non-esistenti.
+  </p>
+
+  <p>
+    Nel regime quantistico la situazione è ancora più grave: tutte le rappresentazioni di un'algebra di osservabili sono unitariamente equivalenti in sistemi finiti, rendendo formalmente impossibile distinguere le fasi. Eppure le fasi si manifestano: in sistemi di spin piccoli osserviamo rottura di simmetria, comportamento critico e correlazioni di lungo range.
+  </p>
+
+  <p>
+    Anche il gruppo di rinormalizzazione (RG), nonostante la sua potenza esplicativa nel limite infinito, si basa su concetti — punti fissi, lunghezze di correlazione divergenti, flussi nello spazio dei parametri — che non sono rigorosamente definiti in sistemi finiti. Eppure in sistemi molto piccoli osserviamo già esponenti critici che corrispondono a quelli del limite infinito. Secondo la teoria, l'universalità emerge dal limite; secondo l'esperimento, è già presente.
+  </p>
+
+  <h3 class="h3">Una Crisi Operazionale</h3>
+
+  <p>
+    Questa crisi non è solo concettuale. È operazionale.
+  </p>
+
+  <p>
+    Nel contesto delle tecnologie quantistiche — array di Rydberg, catene di ioni intrappolati, reti di qubit superconduttori — questi fenomeni non sono curiosità teoriche: definiscono i regimi operativi dei dispositivi. L'emergenza di ordine, coerenza e comportamento collettivo in sistemi finiti, chiusi e rumorosi è ormai il nucleo funzionale del controllo quantistico.
+  </p>
+
+  <p>
+    Eppure, manca una teoria che possa definire le transizioni in questi sistemi. Il formalismo attuale etichetta questi fenomeni come crossover, ma significa soltanto che non sappiamo come classificarli. Senza una teoria strutturale, non possiamo nemmeno dire quando un sistema passa da una fase all'altra. Non possiamo progettare tecnologie se non sappiamo quando un comportamento emerge o scompare.
+  </p>
+
+  <h3 class="h3">Una Proposta Strutturale: L'Entropia come Oggetto Geometrico</h3>
+
+  <p>
+    Proposte recenti hanno tentato di rompere questo impasse. Bachmann ha mostrato che è possibile classificare le transizioni anche in sistemi finiti analizzando le derivate dell'entropia microcanonica. Di Cairano et al. hanno mostrato che le transizioni possono essere interpretate come riorganizzazioni geometriche nello spazio degli stati. Tuttavia, questi strumenti rimangono confinati al dominio classico: non esiste una definizione operazionale di entropia microcanonica per sistemi quantistici finiti.
+  </p>
+
+  <p>
+    In questo lavoro, affrontiamo questo vuoto. Costruiamo una definizione funzionale di entropia microcanonica per sistemi quantistici finiti, basata su un formalismo di path-integral in termini di stati coerenti SU(2). A differenza dell'approccio tradizionale che tratta l'entropia come un conteggio di microstati, qui l'entropia emerge come una struttura geometrica nello spazio delle traiettorie coerenti, con azione e curvatura ben definite.
+  </p>
+
+  <p>
+    Questa formulazione ci consente di:
+  </p>
+
+  <ul class="linklist">
+    <li>Calcolare l'entropia e gli osservabili termodinamici in sistemi quantistici finiti senza invocare il limite termodinamico;</li>
+    <li>Applicare la classificazione di Bachmann a modelli quantistici puri di stato (ad es., sistemi di spin, Hamiltoniana di Tavis–Cummings);</li>
+    <li>Riformulare le transizioni di fase non come singolarità analitiche, ma come trasformazioni geometriche nella struttura dell'azione sullo spazio di configurazione.</li>
+  </ul>
+
+  <h3 class="h3">Non un Affinamento: Una Ri-fondazione</h3>
+
+  <p>
+    Non è un affinamento dell'analisi dei crossover. È una proposta di ridefinire i concetti termodinamici nell'unico regime in cui la fisica quantistica è effettivamente operazionale. L'obiettivo non è sostituire il formalismo classico, ma complementarlo con una nuova struttura — coerente, geometrica, compatibile-finita — capace di spiegare quello che già vediamo nei nostri laboratori.
+  </p>
+
+    </article>
+
     <div class="sep"></div>
-  
-    <!-- blocco immagine + testo -->
-    <section class="block">
-      <div class="block__text">
-        <h2 class="h2">Summary</h2>
-        <p>
-          Focus
-        </p>
-  
-        <h2 class="h2" style="margin-top:24px;">Key results</h2>
-        <ul>
-          <li>Result 1…</li>
-          <li>Result 2…</li>
-        </ul>
-      </div>
-    </section>
-  
     <div class="sep"></div>
-  
-    <!-- Sezioni / sottosezioni -->
-    <section class="content">
-      <h2 class="h2">Section 1 — Setup</h2>
-      <h3 class="h3">1.1 Model</h3>
-      <p>Testo…</p>
-  
-      <h3 class="h3">1.2 Methods</h3>
-      <p>Testo…</p>
-  
-      <h2 class="h2" style="margin-top:26px;">Section 2 — Results</h2>
-      <p>Testo…</p>
-    </section>
-  
+        <p style="margin:10px 0 0;"><a class="navlink" href="../">← Back to Research</a></p>
+<div class="sep"></div>
+<div class="sep"></div>
   </main>
 
+  <!-- SCRIPT TOGGLE -->
+  <script src="../../assets/js/lang-toggle.js"></script>
 </body>
 </html>
