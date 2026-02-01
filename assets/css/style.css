@@ -101,7 +101,7 @@ a:hover{ text-decoration: underline; }
 
 /* Bottone lingua (globale) */
 .lang-toggle{
-  margin-left: 14px;
+  margin-left: 1px; 
   display: inline-flex;
   align-items: center;
   gap: 10px;
