@@ -1,5 +1,5 @@
 website/
-├── index.html        ✅ QUESTO È OBBLIGATORIO
+├── index.html        
 ├── css/
 ├── research/
 │   └── index.html
